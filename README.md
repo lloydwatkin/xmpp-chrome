@@ -26,6 +26,12 @@ An experimental chrome extension to allow use of XMPP.
 
 If this works out it will be packaged and available via the chrome store.
 
+## Crazy dream
+
+* Choose contact
+* Make webRTC call in browser
+* Switch presence to dnd
+
 ## Licence
 
 Apache 2.0 
