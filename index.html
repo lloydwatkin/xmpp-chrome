@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>XMPP in your browser</title>
+    <link rel="stylesheet" href="vendor/jquery-ui.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <script type="text/javascript" src="vendor/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="vendor/jquery-ui.js"></script>
+    <script src="xmpp.js"></script>
+  </head>
+  <body>
+      
+    <div id="tabs">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#settings">Settings</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+      <div id="home">
+        <p>XMPP Chrome extension</p>
+        <p class="connection-status"></p>
+        <button class="login">Login</button>
+      </div>
+      <div id="about">
+      <p>Written by <a href="https://twitter.com/lloydwatkin">Lloyd Watkin</a></p>
+      <p>Using <a href="https://xmpp-ftw.jit.su">XMPP-FTW</a></p>
+      <p>This code is open source and available on github</p>
+      </div>
+      <div id="settings">
+      <h2>Connection details</h2>
+      <form>
+      <label for="jid">Jid</label> <input name="jid" type="text" />
+      <label for="password">Password</label> <input type="password" name="password" />
+      <button type="submit">Save</button>
+          
+      <p>advanced</p>
+          
+      <label for="host">Host</label> <input type="text" name="host" />
+      <label for="XMPP-FTW Location">XMPP-FTW Location</label> <input type="text" name="xmpp-ftw-location" />
+      </form>  
+      </div>
+    </div>
+  </body>
+</html>
