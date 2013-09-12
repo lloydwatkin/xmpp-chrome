@@ -10,3 +10,26 @@ body {
         width: 75px;
         height: 75px;
       }
+
+
+button.success {
+    background-color: #00FF00;
+}
+
+
+/* Connection status */
+#home p.connection-status.offline,
+  #home p.connection-status.authentication-fail,
+  #home p.connection-status.unknown-connection-fail {
+    background-color: #ff0000;
+    color: #ffffff;
+}
+
+#home p.connection-status.connected {
+    background-color: #ff9900;
+    color: #ffffff;
+}
+
+#home p.connection-status.online {
+    background-color: #00ff00;
+}

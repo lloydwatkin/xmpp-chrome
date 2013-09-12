@@ -6,10 +6,16 @@
   "version": "0.1",
 
   "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "index.html"
+    "default_icon": "icon.png"
   },
   "permissions": [
-    "https://xmpp-ftw.jit.su/"
-  ]
+    "https://xmpp-ftw.jit.su/*",
+    "https://xmpp-ftw.jit.su/scripts/*"
+  ],
+  "background": {
+    "persistent": false,
+    "page": "index.html"
+  },
+  "content_security_policy": "script-src 'self' https://xmpp-ftw.jit.su; object-src 'self'"
+    
 }
